@@ -22,6 +22,12 @@ public class AlumnoCRUD {
             System.err.println(e.getMessage());
         }
     }
+
+    public void altaAlumno(Alumno alumno) {
+        ArrayList<Alumno> listaAlumno = leerAlumnos();
+        listaAlumno.add(alumno);
+        escribirAlumnos(listaAlumno);
+    }
     
     /*
         Escribe en el fichero un ArrayList de alumnos
