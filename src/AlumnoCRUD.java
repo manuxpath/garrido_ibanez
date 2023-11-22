@@ -84,6 +84,11 @@ listaAlumno.remove(i);
 escribirAlumnos(listaAlumno);
 }
 
+public void mostrarTodos() {
+ArrayList<Alumno> listaAlumnos = leerAlumnos();
+for (Alumno a : listaAlumnos) System.out.println(a.getNombre() +
+" " + a.getApellidos() + " " + a.getCurso());
+}
 
 
 }
